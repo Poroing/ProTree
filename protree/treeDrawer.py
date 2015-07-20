@@ -1,6 +1,6 @@
 from pyglet.graphics import draw
 from pyglet.gl import (GL_TRIANGLE_STRIP, GL_BLEND, glEnable, glBlendFunc, 
-    GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA)
+    GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA, glIsEnabled)
 from math import cos, sin
 
 """Module that store function to draw Tree object using pyglet
