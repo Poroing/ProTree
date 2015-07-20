@@ -5,7 +5,7 @@ from pyglet.gl import Config
 from pyglet import app
 
 t = Tree()
-tb = TreeBuilder(min_branch=7, max_branch=9, random_side=True)
+tb = TreeBuilder()
 
 config = Config(alpha_size=8)
 w = Window(config=config)
@@ -22,5 +22,8 @@ def on_key_press(symbols, modifier):
     if symbols is key.N:
         tb.addBranchesToEnd(t)
         drawLastBranches(t, 300, 0, 200, 20, 255, 255, 255, 16)
+    if symbols is key.D:
+        w.clear()
+        drawTree(t, 300, 0, 200, 20, 255, 255, 255, 16)
 
 app.run()
