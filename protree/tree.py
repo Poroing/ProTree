@@ -187,13 +187,3 @@ class TreeBuilder(object):
     def randomBaseAngle(self):
         return self.base_branch_angle + self.randomAngle()
 
-if __name__ == '__main__':
-    tree = Tree()
-    for i in range(4):
-        tree.branches.append(Tree.Branch(Tree(), 0, 0, 0))
-        for j in range(4):
-            tree.branches[i].tree.branches.append(Tree.Branch(Tree(), 0, 0, 0))
-
-    for last_child in tree.last_branches:
-        for i in range(4):
-            last_child.branches.append(Tree.Branch(Tree(), 0, 0, 0))
