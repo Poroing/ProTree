@@ -1,5 +1,5 @@
 # ProTree
-A Python package that create produrally and draw Trees.
+A Python package that create procedurally and draw Trees.
 
 ## Example of tree
 
